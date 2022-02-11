@@ -1,0 +1,20 @@
+Uso do aplicativo EloRoteamento via linha de comando:
+
+Ex:
+"<caminho do app>/EloRoteamento.exe" "vendedor="Fulano" locais=latitude,longitude&datahora;latitude,longitude&datahora;latitude,longitude&datahora;"
+
+
+Parâmetros:
+vendedor = Nome do vendedor a verificar a rota
+locais = recebe uma lista de latitudes, longitudes e datas separadas por , e & cada conjunto sendo separado por ; EX: lat , lng & data/hora ; lat , lng & data/hora ; ...
+
+marcas = Marcas que terão destaque no mapa, recebendo um ponto e um tooltip;
+Ex: marcas="-23.200,-53.200&Local da venda;-23.400,-53.400"
+
+O parâmetro é dividido por latitude,longitude&tooltipText sende que o tooltipText pode ser omitido.
+
+-------------------------------------------------------------------------------------------------
+
+Exemplo de uso:
+
+C:\Users\Eloisio>"C:\Users\Eloisio\Desktop\Teste EloRoteamento\EloRoteamento.exe" vendedor="Teste" datai="25/07/2019 10:41:37" dataf="25/07/2019 14:27:11" locais="-23.100,-53.100&11/10/2019 11:15:40;-23.200,-53.200&11/10/2019 11:16:40;-23.300,-53.300&11/10/2019 11:17:40;-23.400,-53.400&11/10/2019 11:18:40" marcas="-23.200,-53.200&Local da venda;-23.400,-53.400"
